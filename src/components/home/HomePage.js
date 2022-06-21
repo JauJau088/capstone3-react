@@ -6,8 +6,11 @@ const HomePage = () => {
   const data = useSelector((state) => state.jobsReducer);
   const dispatch = useDispatch();
 
-  useEffect(() => dispatch(fetchJobs('frontend')), []);
-  console.log(data);
+  useEffect(() => {
+    if (Object.keys(data).length === 0) {
+      dispatch(fetchJobs('frontend'));
+    }
+  }, []);
 
   return (
     <div>

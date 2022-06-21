@@ -1,5 +1,6 @@
 // API
 const baseUri = 'https://www.reed.co.uk/api/1.0/';
+const proxyServer = 'https://jau-cors-anywhere-reed.herokuapp.com/';
 
 // Actions
 const SHOW_JOBS = 'capstone3-jobseek-reedApi/jobs/SHOW_JOBS';
@@ -12,7 +13,7 @@ export const showJobs = (data) => ({
 
 export const fetchJobs = (keywords) => (
   (dispatch) => {
-    fetch(`${baseUri}search?keywords=${keywords}`, {
+    fetch(`${proxyServer}${baseUri}search?keywords=${keywords}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
@@ -26,7 +27,7 @@ export const fetchJobs = (keywords) => (
 
 // Reducer
 const jobsReducer = (state = {}, action) => {
-  switch (action) {
+  switch (action.type) {
     case SHOW_JOBS:
       return action.data;
     default:
