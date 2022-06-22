@@ -15,7 +15,7 @@ const DetailsCard = ({
         <div>{locationName}</div>
       </div>
       <div>
-        {(minimumSalary && maximumSalary)
+        {(minimumSalary > 0 && maximumSalary > 0)
           ? (
             <div>
               {minimumSalary}
@@ -27,7 +27,7 @@ const DetailsCard = ({
               {currency}
             </div>
           )
-          : (<div>Salary not disclosed</div>)}
+          : (<div />)}
         <div>
           {daysLeft}
           &nbsp;days left

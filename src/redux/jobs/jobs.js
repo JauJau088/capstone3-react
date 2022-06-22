@@ -1,6 +1,4 @@
-// API
-const baseUri = 'https://www.reed.co.uk/api/1.0/';
-const proxyServer = 'https://jau-cors-anywhere-reed.herokuapp.com/';
+import baseUri, { proxyServer, apiKey } from '../../utils/api_config';
 
 // Actions
 const UPDATE_DATA = 'capstone3-jobseek-reedApi/jobs/UPDATE_DATA';
@@ -17,7 +15,7 @@ export const fetchJobs = (keywords) => (
       method: 'GET',
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
-        Authorization: `Basic ${btoa('cdf3a52c-c542-43fb-b343-972714ae2e4f:')}`,
+        Authorization: `Basic ${btoa(`${apiKey}:`)}`,
       },
     })
       .then((response) => response.json())

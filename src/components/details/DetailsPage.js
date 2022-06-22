@@ -20,9 +20,9 @@ const DetailsPage = () => {
               jobTitle={s.jobTitle}
               employerName={s.employerName}
               locationName={s.locationName}
-              minimumSalary={s.minimumSalary}
-              maximumSalary={s.maximumSalary}
-              currency={s.currency}
+              minimumSalary={s.minimumSalary || 0}
+              maximumSalary={s.maximumSalary || 0}
+              currency={s.currency || ''}
               date={s.date}
             />
           ))}
