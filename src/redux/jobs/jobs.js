@@ -3,11 +3,11 @@ const baseUri = 'https://www.reed.co.uk/api/1.0/';
 const proxyServer = 'https://jau-cors-anywhere-reed.herokuapp.com/';
 
 // Actions
-const SHOW_JOBS = 'capstone3-jobseek-reedApi/jobs/SHOW_JOBS';
+const UPDATE_DATA = 'capstone3-jobseek-reedApi/jobs/UPDATE_DATA';
 
 // Actions creator
-export const showJobs = (data) => ({
-  type: SHOW_JOBS,
+export const updateData = (data) => ({
+  type: UPDATE_DATA,
   data,
 });
 
@@ -21,14 +21,15 @@ export const fetchJobs = (keywords) => (
       },
     })
       .then((response) => response.json())
-      .then((json) => dispatch(showJobs(json)));
+      .then((json) => dispatch(updateData(json)));
   }
 );
 
 // Reducer
 const jobsReducer = (state = {}, action) => {
   switch (action.type) {
-    case SHOW_JOBS:
+    case UPDATE_DATA:
+      console.log('state updated: ', action.data);
       return action.data;
     default:
       return state;
