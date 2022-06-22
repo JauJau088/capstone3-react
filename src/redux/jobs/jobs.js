@@ -26,11 +26,11 @@ export const fetchJobs = (keywords) => (
 );
 
 // Reducer
-const jobsReducer = (state = {}, action) => {
+const jobsReducer = (state = [], action) => {
   switch (action.type) {
     case UPDATE_DATA:
-      console.log('state updated: ', action.data);
-      return action.data;
+      console.log('fetched: ', action.data);
+      return [action.data];
     default:
       return state;
   }
