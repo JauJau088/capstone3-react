@@ -2,11 +2,17 @@ import baseUri, { proxyServer, apiKey } from '../../utils/api_config';
 
 // Actions
 const UPDATE_DATA = 'capstone3-jobseek-reedApi/jobs/UPDATE_DATA';
+const CLEAR_DATA = 'capstone3-jobseek-reedApi/jobs/CLEAR_DATA';
 
 // Actions creator
-export const updateData = (data) => ({
+export const updateData = (data, keywords) => ({
   type: UPDATE_DATA,
   data,
+  keywords,
+});
+
+export const clearData = () => ({
+  type: CLEAR_DATA,
 });
 
 export const fetchJobs = (keywords) => (
@@ -19,7 +25,7 @@ export const fetchJobs = (keywords) => (
       },
     })
       .then((response) => response.json())
-      .then((json) => dispatch(updateData(json)));
+      .then((json) => dispatch(updateData(json, keywords)));
   }
 );
 
@@ -27,7 +33,9 @@ export const fetchJobs = (keywords) => (
 const jobsReducer = (state = {}, action) => {
   switch (action.type) {
     case UPDATE_DATA:
-      return action.data;
+      return { ...action.data, keywords: action.keywords };
+    case CLEAR_DATA:
+      return {};
     default:
       return state;
   }

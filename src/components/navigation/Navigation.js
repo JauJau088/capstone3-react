@@ -1,10 +1,14 @@
+import { useDispatch } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { clearData } from '../../redux/jobs/jobs';
 
 const Navigation = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleBack = () => {
+    dispatch(clearData());
     navigate('/');
   };
 

@@ -10,7 +10,11 @@ const DetailsPage = () => {
   return (
     <div>
       <section>
-        Details
+        <div>
+          {data?.keywords}
+          &nbsp;jobs
+        </div>
+        <div>{data?.totalResults}</div>
       </section>
       <section>
         {data?.results?.slice(page.current, page.current + 10)
