@@ -9,13 +9,12 @@ const HomePage = () => {
   // Subscribe to aggregate store
   const data = useSelector((state) => state.aggregateReducer);
   // Categories to be shown in the home page
-  const categories = ['frontend', 'frontend remote', 'fullstack', 'fullstack remote', 'react developer', 'ruby developer'];
+  const categories = ['frontend']; // , 'frontend remote', 'fullstack', 'fullstack remote', 'react developer', 'ruby developer'];
   // A helper variable to keep track of the number of categories that has been fetched
   const categoriesTracker = useRef(0);
   // On mount, clear the data in the aggregate store
   useEffect(() => {
     dispatch(clearData());
-    categoriesTracker.current = 0;
   }, []);
   // When data gets updated, fetch another one until all categories are fetched
   useEffect(() => {
