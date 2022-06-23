@@ -23,7 +23,7 @@ const Navigation = () => {
           </button>
         )}
       {location.pathname === '/'
-        ? <div className="nav-title font-lato">Find your dream job here</div>
+        ? <div className="nav-title font-lato">Reed Job Search</div>
         : <div className="nav-title font-lato">Search results</div>}
     </nav>
   );

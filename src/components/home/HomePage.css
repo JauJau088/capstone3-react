@@ -6,11 +6,17 @@
 
 .headline {
   width: 100%;
-  height: 150px;
+  height: 180px;
+  padding-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color-primary-400);
+  background-image: url('../../../public/images/capstone3-rocket-01.svg');
+  background-size: contain;
+  background-origin: content-box;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .headline form {
@@ -19,6 +25,7 @@
   gap: 15px;
   width: 80%;
   max-width: 800px;
+  margin-top: -40px;
 }
 
 .headline input {
@@ -45,6 +52,7 @@
   max-width: var(--width-max);
   padding-left: 10px;
   background-color: var(--color-primary-700);
+  font-weight: 500;
 }
 
 .cards-container {
@@ -54,19 +62,35 @@
   max-width: 800px;
 }
 
-.card {
+.card-container {
+  position: relative;
   height: 187.5px;
   border: none;
   background-color: var(--color-primary-600);
+  overflow: hidden;
+}
+
+.card-container:nth-child(4n-1),
+.card-container:nth-child(4n-2) {
+  background-color: var(--color-primary-800);
+}
+
+.card-bg {
+  position: absolute;
+  left: 25px;
+  font-family: 'Crimson Text', serif;
+  font-size: 100px;
+  font-weight: 600;
+  color: var(--color-primary-900);
+  text-transform: lowercase;
+}
+
+.card {
+  position: relative;;
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
   justify-items: end;
   padding: 10px;
-}
-
-.card:nth-child(4n-1),
-.card:nth-child(4n-2) {
-  background-color: var(--color-primary-800);
 }
 
 .card .icon-arrow-right {
@@ -77,7 +101,12 @@
 .card-title {
   align-self: end;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   text-align: end;
+}
+
+.card-numberofjobs {
+  font-size: 15px;
+  font-weight: 400;
 }
