@@ -1,0 +1,46 @@
+.details-headline-container {
+  display: flex;
+  justify-content: center;
+}
+
+.details-headline {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: var(--headline-height);
+  width: 100%;
+  max-width: var(--width-max);
+  padding: 0 20px;
+  background-color: var(--color-primary-400);
+}
+
+.details-headline-bg {
+  position: absolute;
+  left: 25px;
+  font-family: 'Crimson Text', serif;
+  font-size: 100px;
+  font-weight: 600;
+  color: var(--color-primary-900);
+  text-transform: lowercase;
+}
+
+.details-headline-group {
+  position: relative;
+  width: 60%;
+  text-align: end;
+}
+
+.details-headline-keywords {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.details-card-container {
+  background-color: var(--color-primary-600);
+}
+
+.details-card-container:nth-child(even) {
+  background-color: var(--color-primary-800);
+}

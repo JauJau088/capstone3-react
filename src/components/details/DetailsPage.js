@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { useSelector } from 'react-redux';
 import DetailsCard from './sub_components/DetailsCard';
+import './DetailsPage.css';
 
 const DetailsPage = () => {
   const data = useSelector((state) => state.jobsReducer);
@@ -9,13 +10,19 @@ const DetailsPage = () => {
 
   return (
     <div>
-      <section>
-        <div>
-          {data?.keywords}
-          &nbsp;jobs
+      <section className="details-headline-container">
+        <div className="details-headline">
+          <div className="details-headline-bg">{data?.keywords?.match(/\b(\w)/g)}</div>
+          <div className="details-headline-group">
+            <div className="details-headline-keywords">{data?.keywords}</div>
+            <div>
+              {data?.totalResults}
+              &nbsp;jobs found
+            </div>
+          </div>
         </div>
-        <div>{data?.totalResults}</div>
       </section>
+      <div className="section-title">SEARCH RESULT</div>
       <section>
         {data?.results?.slice(page.current, page.current + 10)
           .map((s) => (

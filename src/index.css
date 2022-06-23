@@ -10,6 +10,7 @@
   --color-primary-900: #b13967;
   --color-grey-800: #1d1d1d;
   --width-max: 800px;
+  --headline-height: 180px;
 }
 
 *,
@@ -41,7 +42,14 @@ button {
   font-family: 'Lato', sans-serif;
 }
 
-.font-14 {
+.section-title {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  max-width: var(--width-max);
+  padding-left: 10px;
+  background-color: var(--color-primary-700);
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }

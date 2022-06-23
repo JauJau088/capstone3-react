@@ -18,7 +18,10 @@ const Card = ({ cardTitle, numberOfJobs }) => {
       <div className="card">
         <span className="material-symbols-outlined icon-arrow-right">arrow_circle_right</span>
         <div className="card-title">{cardTitle}</div>
-        <div className="card-numberofjobs">{numberOfJobs}</div>
+        <div className="card-numberofjobs">
+          {numberOfJobs}
+          &nbsp;jobs
+        </div>
       </div>
     </button>
   );

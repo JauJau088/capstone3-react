@@ -8,7 +8,7 @@ const DetailsCard = ({
   const daysLeft = Math.ceil(((Date.now()) - dateObject) / (1000 * 3600 * 24));
 
   return (
-    <div>
+    <div className="details-card-container">
       <div>
         <div>{employerName}</div>
         <div>{jobTitle}</div>

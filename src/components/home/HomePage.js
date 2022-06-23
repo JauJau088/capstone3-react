@@ -22,7 +22,7 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <Headline />
-      <div className="homepage-section-title font-14">OUR TOP PICKS</div>
+      <div className="section-title">OUR TOP PICKS</div>
       <section className="cards-container">
         {categories.map((category) => (
           <Card
