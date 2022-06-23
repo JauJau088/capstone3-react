@@ -19,7 +19,7 @@ const Navigation = () => {
         ? <div />
         : (
           <button className="nav-button" type="button" onClick={handleBack}>
-            <span className="material-icons-outlined">arrow_back_ios_new</span>
+            <span className="material-symbols-outlined">arrow_back_ios_new</span>
           </button>
         )}
       {location.pathname === '/'

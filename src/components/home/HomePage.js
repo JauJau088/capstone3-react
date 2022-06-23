@@ -20,9 +20,10 @@ const HomePage = () => {
   }, [data]);
 
   return (
-    <div>
+    <div className="homepage">
       <Headline />
-      <section>
+      <div className="homepage-section-title font-14">OUR PICKS</div>
+      <section className="cards-container">
         {categories.map((category) => (
           <Card
             key={category}

@@ -13,8 +13,9 @@ const Card = ({ cardTitle, numberOfJobs }) => {
   };
 
   return (
-    <button type="button" onClick={handleClick}>
-      <div>{cardTitle}</div>
+    <button className="card" type="button" onClick={handleClick}>
+      <span className="material-symbols-outlined icon-arrow-right">arrow_circle_right</span>
+      <div className="card-title">{cardTitle}</div>
       <div>{numberOfJobs}</div>
     </button>
   );
