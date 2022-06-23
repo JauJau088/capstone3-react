@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { aggregateFetch } from '../../redux/aggregate/aggregate';
 import Headline from './sub_components/Headline';
 import Card from './sub_components/Card';
+import './HomePage.css';
 
 const HomePage = () => {
   const data = useSelector((state) => state.aggregateReducer);

@@ -1,0 +1,31 @@
+.headline {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-400);
+}
+
+.headline form {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.headline input {
+  width: 100%;
+  padding: 10px 13px;
+  border: none;
+  border-radius: 5px;
+  color: var(--color-grey-800);
+  outline: none;
+}
+
+.headline button {
+  padding: 10px 13px;
+  background-color: var(--color-primary-900);
+  border: none;
+  border-radius: 5px;
+}
