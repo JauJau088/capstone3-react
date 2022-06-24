@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { clearData } from '../../redux/jobs/jobs';
+import './Navigation.css';
 
 const Navigation = () => {
   const location = useLocation();
@@ -13,11 +14,17 @@ const Navigation = () => {
   };
 
   return (
-    <nav>
-      {location.pathname === '/details'
-        ? <button type="button" onClick={handleBack}>Back</button>
-        : <div />}
-      <div>Navigation</div>
+    <nav className="nav">
+      {location.pathname === '/'
+        ? <div />
+        : (
+          <button className="nav-button" type="button" onClick={handleBack}>
+            <span className="material-symbols-outlined">arrow_back_ios_new</span>
+          </button>
+        )}
+      {location.pathname === '/'
+        ? <div className="nav-title font-lato">Reed Job Search</div>
+        : <div className="nav-title font-lato">Search results</div>}
     </nav>
   );
 };

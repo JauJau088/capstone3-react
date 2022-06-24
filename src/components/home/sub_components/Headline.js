@@ -16,15 +16,16 @@ const Headline = () => {
   };
 
   return (
-    <section>
+    <section className="headline">
       <form onSubmit={handleSubmit}>
         <input
           ref={formInput}
           type="text"
-          placeholder="e.g frontend react remote"
+          placeholder="e.g. frontend react remote"
+          maxLength="50"
           required
         />
-        <button type="submit">Search</button>
+        <button type="submit">SEARCH</button>
       </form>
     </section>
   );

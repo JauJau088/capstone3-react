@@ -38,7 +38,6 @@ const aggregateReducer = (state = [], action) => {
       temp = [...state, action.data];
       // For each new data, add keywords property to the object for identification
       temp[temp.length - 1] = { ...temp[temp.length - 1], keywords: action.keywords };
-      console.log('add data: ', temp);
       return temp;
     case CLEAR_DATA:
       return [];

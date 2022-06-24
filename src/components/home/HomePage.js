@@ -3,11 +3,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { aggregateFetch } from '../../redux/aggregate/aggregate';
 import Headline from './sub_components/Headline';
 import Card from './sub_components/Card';
+import './HomePage.css';
 
 const HomePage = () => {
   const data = useSelector((state) => state.aggregateReducer);
   const dispatch = useDispatch();
-  const categories = ['frontend', 'frontend remote', 'fullstack', 'fullstack remote', 'react developer', 'ruby developer'];
+  const categories = ['frontend', 'frontend remote', 'react developer', 'fullstack', 'fullstack remote', 'ruby developer'];
   // A helper variable to keep track of the number of categories that has been fetched
   const categoriesTracker = useRef(data.length);
   // When data gets updated, fetch another one until all categories are fetched
@@ -19,9 +20,12 @@ const HomePage = () => {
   }, [data]);
 
   return (
-    <div>
+    <div className="homepage">
       <Headline />
-      <section>
+      <div className="section-title-container">
+        <div className="section-title">OUR TOP PICKS</div>
+      </div>
+      <section className="cards-container">
         {categories.map((category) => (
           <Card
             key={category}
