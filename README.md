@@ -9,8 +9,8 @@
 - React
 - Redux
 - JavaScript (ES6+)
-- Tailwind CSS
-- REST API
+- [Reed job search API](https://www.reed.co.uk/developers)
+- [Self-hosted CORS anywhere proxy server](https://github.com/JauJau088/cors-anywhere-jau-reedapi) by [Rob Wu](https://github.com/Rob--W/cors-anywhere)
 - Jest
 - React testing library
 
@@ -63,7 +63,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+- UI design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+- [Reed job search API](https://www.reed.co.uk/developers)
+- CORS anywhere by [Rob Wu](https://github.com/Rob--W)
 
 ## 📝 License
 
