@@ -22,6 +22,7 @@ const Headline = () => {
           ref={formInput}
           type="text"
           placeholder="e.g. frontend react remote"
+          maxLength="50"
           required
         />
         <button type="submit">SEARCH</button>

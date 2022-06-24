@@ -6,7 +6,6 @@ import './DetailsPage.css';
 const DetailsPage = () => {
   const data = useSelector((state) => state.jobsReducer);
   const page = useRef(0);
-  console.log(data);
 
   return (
     <div>
@@ -22,9 +21,11 @@ const DetailsPage = () => {
           </div>
         </div>
       </section>
-      <div className="section-title">SEARCH RESULT</div>
-      <section>
-        {data?.results?.slice(page.current, page.current + 10)
+      <div className="section-title-container">
+        <div className="section-title">SEARCH RESULT</div>
+      </div>
+      <section className="details-cards-section">
+        {data?.results?.slice(page.current, page.current + 50)
           .map((s) => (
             <DetailsCard
               key={s.jobId}
