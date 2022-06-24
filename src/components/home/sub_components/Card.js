@@ -9,7 +9,7 @@ const Card = ({ cardTitle, numberOfJobs }) => {
 
   const handleClick = () => {
     dispatch(fetchJobs(cardTitle));
-    navigate('/details');
+    navigate(`/details/${cardTitle}`);
   };
 
   return (

@@ -11,7 +11,7 @@ const Headline = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(fetchJobs(formInput.current.value));
-    navigate('/details');
+    navigate(`/details/${formInput.current.value}`);
     e.target.reset();
   };
 
