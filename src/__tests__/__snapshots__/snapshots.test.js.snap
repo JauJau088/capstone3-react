@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot test for Details page It should render an identical design 1`] = `
+<div>
+  <section
+    className="details-headline-container"
+  >
+    <div
+      className="details-headline"
+    >
+      <div
+        className="details-headline-bg"
+      />
+      <div
+        className="details-headline-group"
+      >
+        <div
+          className="details-headline-keywords"
+        />
+        <div>
+           jobs found
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    className="section-title-container"
+  >
+    <div
+      className="section-title"
+    >
+      SEARCH RESULT
+    </div>
+  </div>
+  <section
+    className="details-cards-section"
+  />
+</div>
+`;
+
+exports[`Snapshot test for Error page It should render an identical design 1`] = `
+<div>
+  404: Not found
+</div>
+`;
+
+exports[`Snapshot test for Home page It should render an identical design 1`] = `
+<div
+  className="homepage"
+>
+  <section
+    className="headline"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        maxLength="50"
+        placeholder="e.g. frontend react remote"
+        required={true}
+        type="text"
+      />
+      <button
+        type="submit"
+      >
+        SEARCH
+      </button>
+    </form>
+  </section>
+  <div
+    className="section-title-container"
+  >
+    <div
+      className="section-title"
+    >
+      OUR TOP PICKS
+    </div>
+  </div>
+  <section
+    className="cards-container"
+  >
+    <button
+      className="card-container"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="card-bg"
+      >
+        f
+      </div>
+      <div
+        className="card"
+      >
+        <span
+          className="material-symbols-outlined icon-arrow-right"
+        >
+          arrow_circle_right
+        </span>
+        <div
+          className="card-title"
+        >
+          frontend
+        </div>
+        <div
+          className="card-numberofjobs"
+        >
+          0
+           jobs
+        </div>
+      </div>
+    </button>
+    <button
+      className="card-container"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="card-bg"
+      >
+        f
+        r
+      </div>
+      <div
+        className="card"
+      >
+        <span
+          className="material-symbols-outlined icon-arrow-right"
+        >
+          arrow_circle_right
+        </span>
+        <div
+          className="card-title"
+        >
+          frontend remote
+        </div>
+        <div
+          className="card-numberofjobs"
+        >
+          0
+           jobs
+        </div>
+      </div>
+    </button>
+    <button
+      className="card-container"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="card-bg"
+      >
+        r
+        d
+      </div>
+      <div
+        className="card"
+      >
+        <span
+          className="material-symbols-outlined icon-arrow-right"
+        >
+          arrow_circle_right
+        </span>
+        <div
+          className="card-title"
+        >
+          react developer
+        </div>
+        <div
+          className="card-numberofjobs"
+        >
+          0
+           jobs
+        </div>
+      </div>
+    </button>
+    <button
+      className="card-container"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="card-bg"
+      >
+        f
+      </div>
+      <div
+        className="card"
+      >
+        <span
+          className="material-symbols-outlined icon-arrow-right"
+        >
+          arrow_circle_right
+        </span>
+        <div
+          className="card-title"
+        >
+          fullstack
+        </div>
+        <div
+          className="card-numberofjobs"
+        >
+          0
+           jobs
+        </div>
+      </div>
+    </button>
+    <button
+      className="card-container"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="card-bg"
+      >
+        f
+        r
+      </div>
+      <div
+        className="card"
+      >
+        <span
+          className="material-symbols-outlined icon-arrow-right"
+        >
+          arrow_circle_right
+        </span>
+        <div
+          className="card-title"
+        >
+          fullstack remote
+        </div>
+        <div
+          className="card-numberofjobs"
+        >
+          0
+           jobs
+        </div>
+      </div>
+    </button>
+    <button
+      className="card-container"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="card-bg"
+      >
+        r
+        d
+      </div>
+      <div
+        className="card"
+      >
+        <span
+          className="material-symbols-outlined icon-arrow-right"
+        >
+          arrow_circle_right
+        </span>
+        <div
+          className="card-title"
+        >
+          ruby developer
+        </div>
+        <div
+          className="card-numberofjobs"
+        >
+          0
+           jobs
+        </div>
+      </div>
+    </button>
+  </section>
+</div>
+`;
+
+exports[`Snapshot test for Navigaion page It should render an identical design 1`] = `
+<nav
+  className="nav"
+>
+  <div />
+  <div
+    className="nav-title font-lato"
+  >
+    Reed Job Search
+  </div>
+</nav>
+`;
