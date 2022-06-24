@@ -76,7 +76,7 @@
 }
 
 .card {
-  position: relative;;
+  position: relative;
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
   justify-items: end;
