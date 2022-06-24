@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+  --color-primary-400: #f070a2; /* #fc5193; */
+  --color-primary-500: #ec4c8a;
+  --color-primary-600: #e76397; /* #dd4681; */
+  --color-primary-700: #df4782;
+  --color-primary-800: #d03d75; /* #d04278; */
+  --color-primary-900: #a8315f; /* #b13967; */
+  --color-grey-800: #1d1d1d;
+  --width-max: 800px;
+  --headline-height: 180px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Gill Sans', sans-serif;
+  color: white;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-primary-400);
+}
+
+button {
+  cursor: pointer;
+  transition: filter 150ms ease;
+}
+
+button:hover {
+  filter: grayscale(0.3);
+}
+
+button:active {
+  filter: grayscale(0.5);
+}
+
+[class^=material-] {
+  font-size: 15px;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined', sans-serif;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.section-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary-700);
+  width: 100%;
+  height: 100%;
+  max-width: var(--width-max);
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}

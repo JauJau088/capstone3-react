@@ -1,0 +1,99 @@
+.details-headline-container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-primary-400);
+}
+
+.details-headline {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: var(--headline-height);
+  width: 100%;
+  max-width: var(--width-max);
+  padding: 0 20px;
+}
+
+.details-headline-bg {
+  position: absolute;
+  left: 25px;
+  font-family: 'Crimson Text', serif;
+  font-size: 100px;
+  font-weight: 600;
+  color: var(--color-primary-900);
+  text-transform: lowercase;
+}
+
+.details-headline-group {
+  position: relative;
+  width: 60%;
+  text-align: end;
+}
+
+.details-headline-keywords {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.details-cards-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-primary-600);
+  width: 100%;
+  min-height: 120px;
+  max-width: var(--width-max);
+  padding: 15px;
+  border: none;
+  text-align: start;
+}
+
+.details-card-container:nth-child(even) {
+  background-color: var(--color-primary-800);
+}
+
+.job-info1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.job-info1-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.job-info1 .icon-arrow-right {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.job-info1-employer {
+  font-size: 14px;
+}
+
+.job-info1-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.job-info2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  font-size: 13px;
+}
+
+.job-info2-day {
+  text-align: end;
+}

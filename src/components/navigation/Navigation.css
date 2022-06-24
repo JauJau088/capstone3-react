@@ -1,0 +1,20 @@
+.nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  background-color: var(--color-primary-500);
+  height: 50px;
+}
+
+.nav-title {
+  text-align: center;
+  font-weight: 600;
+  margin: auto;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background-color: transparent;
+  border: none;
+}

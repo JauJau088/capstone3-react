@@ -1,0 +1,102 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  width: 100%;
+  height: var(--headline-height);
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-400);
+  background-image: url('../../../public/images/capstone3-rocket-01.svg');
+  background-size: contain;
+  background-origin: content-box;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.headline form {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 80%;
+  max-width: 800px;
+  margin-top: -40px;
+}
+
+.headline input {
+  width: 100%;
+  padding: 10px 13px;
+  border: none;
+  border-radius: 5px;
+  color: var(--color-grey-800);
+  outline: none;
+}
+
+.headline button {
+  padding: 10px 13px;
+  background-color: var(--color-primary-900);
+  border: none;
+  border-radius: 5px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 800px;
+}
+
+.card-container {
+  position: relative;
+  height: 187.5px;
+  border: none;
+  background-color: var(--color-primary-600);
+  overflow: hidden;
+  padding: 10px 10px 3px 10px;
+}
+
+.card-container:nth-child(4n-1),
+.card-container:nth-child(4n-2) {
+  background-color: var(--color-primary-800);
+}
+
+.card-bg {
+  position: absolute;
+  left: 25px;
+  font-family: 'Crimson Text', serif;
+  font-size: 100px;
+  font-weight: 600;
+  color: var(--color-primary-900);
+  text-transform: lowercase;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  justify-items: end;
+  height: 100%;
+}
+
+.card .icon-arrow-right {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.card-title {
+  align-self: end;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: end;
+}
+
+.card-numberofjobs {
+  font-size: 15px;
+  font-weight: 400;
+}

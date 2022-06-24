@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "./static/css/main.676d8188.css",
+    "main.js": "./static/js/main.e659e950.js",
+    "static/js/787.8199df47.chunk.js": "./static/js/787.8199df47.chunk.js",
+    "static/media/capstone3-rocket-01.svg": "./static/media/capstone3-rocket-01.5686039e314c589b828a.svg",
+    "index.html": "./index.html",
+    "main.676d8188.css.map": "./static/css/main.676d8188.css.map",
+    "main.e659e950.js.map": "./static/js/main.e659e950.js.map",
+    "787.8199df47.chunk.js.map": "./static/js/787.8199df47.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.676d8188.css",
+    "static/js/main.e659e950.js"
+  ]
+}
