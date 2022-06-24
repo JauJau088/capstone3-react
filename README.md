@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-:fire: Link :fire:
+:fire: https://jau-reed-job-search.netlify.app/ :fire:
 
 ## Getting Started
 
